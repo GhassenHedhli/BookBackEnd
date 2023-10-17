@@ -20,6 +20,10 @@ dateref:{
 NumofBook:{
     type:Number,
     requied:true
+},
+available:{
+type:Boolean,
+requied:true
 }
 })
 const bookModel = mongoose.model("book", bookSchema);
