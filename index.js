@@ -3,12 +3,12 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import bookRoures from "./routes/bookRoutes.js"
-
+import userRoutes from "./routes/user.js"; 
 dotenv.config();
 const app = express();
 app.use(express.json());
 app.use("/books",bookRoures);
-
+app.use("/api/auth", userRoutes);
 
 
 /* MONGOOSE SETUP */
